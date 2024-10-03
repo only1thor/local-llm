@@ -1,0 +1,8 @@
+services:
+  libretranslate:
+    image: libretranslate/libretranslate:latest
+    restart: always
+    ports:
+      - 5000:5000
+    volumes:
+      - libretranslate_models:/home/libretranslate/.local:rw
